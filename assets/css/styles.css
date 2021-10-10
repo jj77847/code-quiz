@@ -35,7 +35,6 @@ body {
 .nav-item {
   padding: 2rem;
   color: yellow
-  background-color: red;
 }
 
 .nav-item a {
@@ -52,15 +51,18 @@ body {
 
 .main {
   font-size: 1rem;
-}
-
-.main-container {
+  background-image: url(/assets/images/batman-background-quiz.jpeg);
+  margin: 0;
+  display: block;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  
 }
 
 .container {
   margin: 0 2rem;
-  padding: 4rem;
-  background-image: url('./https://github.com/jj77847/code-quiz-final/blob/15c5b4ee0fcb8a362ef90a142b8f7c32093e6d51/assets/images/batman-background-quiz.jpeg');
+  padding: 4rem;  
 }
 
 .start-container {
@@ -108,8 +110,8 @@ body {
 .option-item {
   margin: 1rem 0;
   padding: 1rem;
-  background-color: yellow;
-  color: red;
+  background-color: red;
+  color: yellow;
   border-color: black;
   border-radius: 0.2rem;
   font-size: 1rem;
@@ -117,9 +119,9 @@ body {
 }
 
 .option-item:hover {
-  background-color: var(--maximum-yellow-red);
+  background-color:yellow;
   cursor: pointer;
-  color: #000;
+  color: red;
 }
 
 .answer-alert {
@@ -131,7 +133,10 @@ body {
 }
 
 .answer-alert-success {
-  color: var(--alert-success-text);
+  color: var(--alerdisplay: flex;
+  flex-direction: row;
+  justify-content: space-between;
+};
   background-color: var(--alert-success-background);
   border-color: var(--alert-success-border);
 }
@@ -171,6 +176,12 @@ body {
   color: red;
 }
 
+@media screen and (max-width: 480px) {
+  .main {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .nav-container {
     flex-direction: column;
@@ -180,7 +191,6 @@ body {
   .container {
     margin: 4rem 1rem;
     padding: 2rem;
-    b
   }
 
   .form-item input {
