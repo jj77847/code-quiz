@@ -1,10 +1,10 @@
 :root {
-  --alert-success-text: green;
-  --alert-success-background: grey;
-  --alert-success-border: #badbcc;
-  --alert-danger-text: #842029;
-  --alert-danger-background: #f8d7da;
-  --alert-danger-border: #f5c2c7;
+  --alert-success-text: red;
+  --alert-success-background: green;
+  --alert-success-border: green;
+  --alert-danger-text: green;
+  --alert-danger-background: red;
+  --alert-danger-border: red;
 }
 
 * {
@@ -12,11 +12,11 @@
 }
 
 body {
-  margin: 0;
+  margin: 2px;
   font-family: "Bangers", cursive;
   line-height: 1.4;
   font-size: 10px;
-  color: yellow;
+  color: red;
   text-shadow: 2px 2px 4px black;
 }
 
@@ -34,29 +34,33 @@ body {
 
 .nav-item {
   padding: 2rem;
-  color: red;
-  background-color: yellow;
+  color: yellow
+  background-color: red;
 }
 
 .nav-item a {
-  background-color: none;
+  background-color: red;
   cursor: pointer;
-  color: red;
+  color:yellow;
 }
 
 .nav-item a:hover {
-  background-color: red;
+  background-color: yellow;
   cursor: pointer;
-  color: yellow;
+  color: red;
 }
 
 .main {
   font-size: 1rem;
 }
 
+.main-container {
+}
+
 .container {
   margin: 0 2rem;
   padding: 4rem;
+  background-image: url('./https://github.com/jj77847/code-quiz-final/blob/15c5b4ee0fcb8a362ef90a142b8f7c32093e6d51/assets/images/batman-background-quiz.jpeg');
 }
 
 .start-container {
@@ -70,20 +74,19 @@ body {
 
 .btn {
   padding: 1rem 1.5rem;
-  border: black;
   border-radius: 0.4rem;
   font-size: 1rem;
   letter-spacing: 0.2rem;
   font-weight: 600;
   background-color: yellow;
   border-style: solid;
-  color: black;
+  color: red;
 }
 
 .btn:hover {
-  background-color: red;
+  background-color: yellow;
   cursor: pointer;
-  color: yellow;
+  color: red;
 }
 
 .question-container {
@@ -105,8 +108,8 @@ body {
 .option-item {
   margin: 1rem 0;
   padding: 1rem;
-  background-color: gray;
-  color: yellow;
+  background-color: yellow;
+  color: red;
   border-color: black;
   border-radius: 0.2rem;
   font-size: 1rem;
@@ -141,8 +144,8 @@ body {
 
 .score-form {
   text-align: center;
-  background-color: gray;
-  color: yellow;
+  background-color:yellow;
+  color: red;
   margin-top: 4rem;
 }
 
@@ -157,15 +160,15 @@ body {
 
 .form-item input {
   padding: 1rem 0.5rem;
-  font-size: 1rem;
+  font-size: 4rem;
   width: 75%;
 }
 
 .game-over {
   text-align: center;
-  background-color: var(--prussian-blue);
-  color: var(--lemon-meringue);
+  background-color: yellow;
   margin-top: 4rem;
+  color: red;
 }
 
 @media screen and (max-width: 576px) {
@@ -177,6 +180,7 @@ body {
   .container {
     margin: 4rem 1rem;
     padding: 2rem;
+    b
   }
 
   .form-item input {
