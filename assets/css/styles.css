@@ -1,6 +1,6 @@
 :root {
-  --alert-success-text: #0f5132;
-  --alert-success-background: #d1e7dd;
+  --alert-success-text: green;
+  --alert-success-background: grey;
   --alert-success-border: #badbcc;
   --alert-danger-text: #842029;
   --alert-danger-background: #f8d7da;
@@ -21,9 +21,9 @@ body {
 }
 
 .header {
-  color: var(--lemon-meringue);
+  color: yellow;
   font-size: 1.4rem;
-  background-color: var(--prussian-blue);
+  background-color: gray;
 }
 
 .nav-container {
@@ -34,11 +34,14 @@ body {
 
 .nav-item {
   padding: 2rem;
+  color: yellow;
 }
 
-.nav-item a {
-  text-decoration: none;
-  color: var(--lemon-meringue);
+.nav-item:hover {
+  background-color: yellow;
+  cursor: pointer;
+  color: red;
+  border-color: black;
 }
 
 .main {
@@ -61,19 +64,20 @@ body {
 
 .btn {
   padding: 1rem 1.5rem;
-  border: none;
+  border: black;
   border-radius: 0.4rem;
   font-size: 1rem;
   letter-spacing: 0.2rem;
   font-weight: 600;
-  background-color: var(--lemon-meringue);
-  color: #000;
+  background-color: yellow;
+  border-style: solid;
+  color: black;
 }
 
 .btn:hover {
-  background-color: var(--maximum-yellow-red);
+  background-color: red;
   cursor: pointer;
-  color: #fff;
+  color: yellow;
 }
 
 .question-container {
@@ -95,9 +99,9 @@ body {
 .option-item {
   margin: 1rem 0;
   padding: 1rem;
-  background-color: var(--prussian-blue);
-  color: #fff;
-  border: none;
+  background-color: gray;
+  color: yellow;
+  border-color: black;
   border-radius: 0.2rem;
   font-size: 1rem;
   letter-spacing: 0.1rem;
@@ -131,8 +135,8 @@ body {
 
 .score-form {
   text-align: center;
-  background-color: var(--prussian-blue);
-  color: var(--lemon-meringue);
+  background-color: gray;
+  color: yellow;
   margin-top: 4rem;
 }
 
