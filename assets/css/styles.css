@@ -23,7 +23,7 @@ body {
 .header {
   color: yellow;
   font-size: 1.4rem;
-  background-color: gray;
+  background-color: black;
 }
 
 .nav-container {
@@ -34,14 +34,20 @@ body {
 
 .nav-item {
   padding: 2rem;
-  color: yellow;
+  color: red;
+  background-color: yellow;
 }
 
-.nav-item:hover {
-  background-color: yellow;
+.nav-item a {
+  background-color: none;
   cursor: pointer;
   color: red;
-  border-color: black;
+}
+
+.nav-item a:hover {
+  background-color: red;
+  cursor: pointer;
+  color: yellow;
 }
 
 .main {
