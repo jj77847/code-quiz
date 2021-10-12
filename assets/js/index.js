@@ -280,7 +280,7 @@ const verifyAnswer = function (event) {
     currentQuestionIndex += 1;
 
     // check if last question
-    if (currentQuestionIndex < movieQuestions.length) {
+    if (currentQuestionIndex < quizQuestions.length) {
       // render the next question
       removeQuestionContainer();
       renderQuestionContainer();
@@ -317,7 +317,7 @@ const constructQuestionContainer = function (question) {
 // render question container
 const renderQuestionContainer = function () {
   // get the current question
-  const currentQuestion = movieQuestions[currentQuestionIndex];
+  const currentQuestion = quizQuestions[currentQuestionIndex];
 
   // construct the HTML for the question container
   const questionContainer = constructQuestionContainer(currentQuestion);
@@ -355,7 +355,7 @@ const renderGameOver = function () {
 const startTimer = function () {
   // declare the timer tick function
   const timerTick = function () {
-    if (currentQuestionIndex >= movieQuestions.length) {
+    if (currentQuestionIndex >= quizQuestions.length) {
       clearInterval(timer);
     } else if (count < 0) {
       clearInterval(timer);
