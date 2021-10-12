@@ -1,24 +1,94 @@
-const movieQuestions = [
+const quizQuestions = [
   {
-    title: "How many Harry Potter films are released?",
-    options: ["3", "6", "8", "10"],
-    correctOption: "8",
+    title:
+      "Which of the following Bat vehicles did Batman and Robin once drive as Bruce Wayne and Dick Grayson?",
+    options: ["Batboat", "Batmobile", "Batcycle", "Batcopter"],
+    correctOption: "Batcycle",
   },
   {
-    title: "How many Back to the Future films are released?",
-    options: ["2", "3", "1", "5"],
-    correctOption: "3",
+    title: "Catwoman once owned a tiger as a pet. What was the tiger's name?",
+    options: [" Mortimer", "Isolde", "Felix", "Tinkerbell"],
+    correctOption: "Tinkerbell",
   },
   {
-    title: "How many Rocky films are released?",
-    options: ["1", "3", "4", "6"],
-    correctOption: "6",
+    title: "Which villainess did Batman almost get married to?",
+    options: [
+      "Calamity Jan",
+      "Catwoman",
+      "Lola Lasagne",
+      "Marsha, Queen of Diamonds",
+    ],
+    correctOption: "Marsha, Queen of Diamonds",
+  },
+  {
+    title: "What was Mr. Freeze's favorite dessert?",
+    options: [
+      "Caramelized banana pudding",
+      "Baked Alaska",
+      "Peach cobbler",
+      "Fig cake",
+    ],
+    correctOption: "Baked Alaska",
+  },
+  {
+    title: "What was Batman adamant about during a Bat-climb?",
+    options: [
+      "Keeping both hands on the Bat-rope",
+      "They must always be talkinge",
+      "Not looking down",
+      "They must not put their dirty boots on clean windows",
+    ],
+    correctOption: "Keeping both hands on the Bat-rope",
+  },
+  {
+    title:
+      "Where was Joker and Catwoman's hideout, The Grimalkin Novelty Company, located?",
+    options: [
+      "34 Lombard Road",
+      "On the corner of Juggle Drive and Laugher Avenue",
+      "On the corner of Cattail Lane and Nine Lives Alley",
+      "2809 West 20th Street",
+    ],
+    correctOption: "On the corner of Cattail Lane and Nine Lives Alley",
+  },
+  {
+    title:
+      "The first time escaping from the police, False Face disguised himself as what?",
+    options: ["Chef", "Bank guard", "Firefighter", "Cowboy"],
+    correctOption: "Chef",
+  },
+  {
+    title: "How far was it from the Batcave to Gotham City?",
+    options: ["Half a mile", "1 mile", "14 miles", "20 miles"],
+    correctOption: "14 miles",
+  },
+  {
+    title:
+      "What was the name of the exploding book that the Bookworm's assistant, Lydia Limpet, placed in the front seat of the Batmobile?",
+    options: [
+      "Magical Paths to Fortune and Power",
+      "For Whom the Bell Tolls",
+      "The Secret of Success...Self-Control",
+      "Gone With the Wind",
+    ],
+    correctOption: "For Whom the Bell Tolls",
+  },
+  {
+    title:
+      "What was the first clue Batman and Robin received from the Riddler?",
+    options: [
+      "How many sides is a circle?",
+      "When is a man drowned, but still not wet?",
+      "Why is an orange like a bell?",
+      "What has 4 legs, runs day and night, but never gets anywhere?",
+    ],
+    correctOption: "Why is an orange like a bell?",
   },
 ];
 
 let currentQuestionIndex = 0;
-let count = movieQuestions.length * 5;
-// let count = 5;
+let count = quizQuestions.length * 10;
+// let count = 10;
 
 const constructOptions = function (options) {
   const optionsContainer = document.createElement("div");
@@ -151,7 +221,7 @@ const renderDangerAlert = function () {
   // construct alert
   const alert = constructAlert(
     "container answer-alert answer-alert-danger",
-    "Oops, you are incorrect!!"
+    "Nope, Try Again!"
   );
 
   // append the alert to the document
