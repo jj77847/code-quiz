@@ -24,6 +24,18 @@ h1 {
   color: red;
 }
 
+p {
+  font-size: x-large;
+}
+
+#title {
+  font-size: x-large;
+}
+
+.options {
+  font-size: x-large;
+}
+
 .header {
   color: yellow;
   font-size: 1.4rem;
@@ -56,7 +68,7 @@ h1 {
 .main {
   font-size: 1rem;
   background-image: url(/assets/images/batman-background-quiz.jpeg);
-  background-size: contain;
+  background-repeat: round;
   margin: 0;
   display: block;
   display: flex;
@@ -82,9 +94,9 @@ h1 {
   font-size: 1rem;
   letter-spacing: 0.2rem;
   font-weight: 600;
-  background-color: yellow;
+  background-color: red;
   border-style: solid;
-  color: red;
+  color:yellow;
 }
 
 .btn:hover {
