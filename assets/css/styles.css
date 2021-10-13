@@ -50,19 +50,20 @@ p {
 
 .nav-item {
   padding: 2rem;
-  color: yellow
+  color: yellow;
+  background-color: red;
 }
 
 .nav-item a {
-  background-color: yellow;
-  cursor: pointer;
-  color:red;
-}
-
-.nav-item a:hover {
   background-color: red;
   cursor: pointer;
   color:yellow;
+}
+
+.nav-item a:hover {
+  background-color: yellow;
+  cursor: pointer;
+  color:red;
 }
 
 .main {
