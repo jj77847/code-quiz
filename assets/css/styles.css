@@ -78,7 +78,7 @@ p {
 
 .main {
   font-size: 2rem;
-  background-image: url(/Users/jonathanjefferies/code-quiz-final/assets/images/batman-background-quiz.jpeg);
+  background-image: url(https://github.com/jj77847/code-quiz-final/blob/15c5b4ee0fcb8a362ef90a142b8f7c32093e6d51/assets/images/batman-background-quiz.jpeg);
   margin: 0;
   display: block;
   display: flex;
@@ -92,7 +92,7 @@ p {
 
 .main-container {
   font-size: 1rem;
-  background-image: url(/Users/jonathanjefferies/code-quiz-final/assets/images/batman-background-quiz.jpeg);
+  background-image: url(https://github.com/jj77847/code-quiz-final/blob/15c5b4ee0fcb8a362ef90a142b8f7c32093e6d51/assets/images/batman-background-quiz.jpeg);
   margin: 0;
   display: block;
   display: flex;
@@ -111,7 +111,7 @@ p {
 
 .start-container {
   text-align: center;
-  background-image: url(/Users/jonathanjefferies/code-quiz-final/assets/images/batman-background-quiz.jpeg);
+  background-image: url(https://github.com/jj77847/code-quiz-final/blob/15c5b4ee0fcb8a362ef90a142b8f7c32093e6d51/assets/images/batman-background-quiz.jpeg);
   margin: 0;
   display: block;
   display: flex;
