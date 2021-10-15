@@ -4,6 +4,14 @@ Batman 66 inspired quiz using JavaScript, HTML and CSS
 
 ## User Story
 
+### Links
+
+[Link to Google](https://www.google.com)
+
+
+
+#### Screenshots
+
 There are 10 questions and a 100sec timer that will Start; once the 'START QUIZ' button is pressed.
 
 You will have 10 points awarded for a correct answer and -5points for an incorrect answer.
