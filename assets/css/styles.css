@@ -1,5 +1,5 @@
 :root {
-  --mmain-yellow: yellow;
+  --main-yellow: yellow;
   --main-red: red;
   --alert-success-text: white;
   --alert-success-background: green;
@@ -32,7 +32,7 @@ h2 {
 }
 
 p {
-  font-size: x-large;
+  font-size: 1.5;
 }
 
 #title {
@@ -65,18 +65,18 @@ p {
 .nav-item a {
   background-color: red;
   cursor: pointer;
-  color:yellow;
+  color: yellow;
   font-size: 2rem;
 }
 
 .nav-item a:hover {
   background-color: yellow;
   cursor: pointer;
-  color:red;
+  color: red;
 }
 
 .main {
-  font-size: 1rem;
+  font-size: 2rem;
   background-image: url(/assets/images/batman-background-quiz.jpeg);
   background-repeat: round;
   margin: 0;
@@ -95,7 +95,7 @@ p {
 
 .container {
   margin: 0 2rem;
-  padding: 4rem;  
+  padding: 4rem;
 }
 
 .start-container {
@@ -116,12 +116,12 @@ p {
 .btn {
   padding: 1rem 1.5rem;
   border-radius: 0.4rem;
-  font-size: 1rem;
+  font-size: 2rem;
   letter-spacing: 0.2rem;
   font-weight: 600;
   background-color: red;
   border-style: solid;
-  color:yellow;
+  color: yellow;
 }
 
 .btn:hover {
@@ -158,7 +158,7 @@ p {
 }
 
 .option-item:hover {
-  background-color:yellow;
+  background-color: yellow;
   cursor: pointer;
   color: red;
 }
@@ -167,15 +167,12 @@ p {
   position: relative;
   padding: 1rem 1rem;
   margin-bottom: 1rem;
-  border: 1px solid transparent;
+  border: 1px solid;
   border-radius: 0.25rem;
 }
 
 .answer-alert-success {
-  color: var(--alerdisplay: flex;
-  flex-direction: row;
-  justify-content: space-between;
-};
+  color: var(--alert-success-text);
   background-color: var(--alert-success-background);
   border-color: var(--alert-success-border);
 }
@@ -188,8 +185,8 @@ p {
 
 .score-form {
   text-align: center;
-  background-color:yellow;
-  color: red;
+  background-color: var(--main-red);
+  color: var(--main-yellow);
   margin-top: 4rem;
 }
 
@@ -206,7 +203,7 @@ p {
 .form-item input {
   padding: 1rem 0.5rem;
   font-size: 4rem;
-  width: 75%;
+  width: 100%;
 }
 
 .game-over {

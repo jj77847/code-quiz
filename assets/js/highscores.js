@@ -16,7 +16,7 @@ const renderHighscores = function (highscores) {
 
   for (let i = 0; i < highscores.length; i++) {
     // get current highscores
-    const highscore = highscores[i];
+    const highscores = highscores[i];
 
     // construct li
     const liElement = document.createElement("li");
