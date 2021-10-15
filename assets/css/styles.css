@@ -24,15 +24,16 @@ body {
 
 h1 {
   color: red;
+  font-size: 2rem;
 }
 
 h2 {
   color: yellow;
-  font-size: 2rem;
+  font-size: 2px;
 }
 
 p {
-  font-size: 1.5;
+  font-size: 2rem;
 }
 
 #title {
