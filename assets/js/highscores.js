@@ -15,20 +15,20 @@ const renderHighscores = function (highscores) {
   ulElement.setAttribute("id", "highscores-list");
 
   for (let i = 0; i < highscores.length; i++) {
-    // get current highscore
+    // get current highscores
     const highscore = highscores[i];
 
     // construct li
     const liElement = document.createElement("li");
-    liElement.setAttribute("class", "highscore-container");
+    liElement.setAttribute("class", "highscores-container");
 
     // construct initials
     const initialsDiv = document.createElement("div");
-    initialsDiv.textContent = highscore.initials;
+    initialsDiv.textContent = highscores.initials;
 
     // construct score
     const scoreDiv = document.createElement("div");
-    scoreDiv.textContent = highscore.score;
+    scoreDiv.textContent = highscores.score;
 
     // append divs to li
     liElement.append(initialsDiv, scoreDiv);

@@ -221,7 +221,7 @@ const renderDangerAlert = function () {
   // construct alert
   const alert = constructAlert(
     "container answer-alert answer-alert-danger",
-    "Nope, Try Again!"
+    "Oops, you are incorrect!!"
   );
 
   // append the alert to the document
@@ -263,20 +263,21 @@ const verifyAnswer = function (event) {
     // get the correct option for the question
     const correctOption = currentTarget.getAttribute("data-correct");
 
-    console.log(userOption, correctOption);
-
     // verify the 2
     if (userOption !== correctOption) {
       // time penalty deduct 5 seconds
       count -= 5;
-      document.getElementById("countdown").textContent = count;
       renderDangerAlert();
+      if (count > 0) {
+        document.getElementById("countdown").textContent = count;
+      } else {
+        document.getElementById("countdown").textContent = 0;
+      }
     } else {
-      console.log("CORRECT");
       renderSuccessAlert();
     }
 
-    // go to next question 0 1 2 (3)
+    // go to next question 0 1 2 3 4 5 6 7 8 9 (10)
     currentQuestionIndex += 1;
 
     // check if last question
@@ -285,7 +286,12 @@ const verifyAnswer = function (event) {
       removeQuestionContainer();
       renderQuestionContainer();
     } else {
-      renderScoreForm();
+      if (count > 0) {
+        renderScoreForm();
+      } else {
+        removeQuestionContainer();
+        renderGameOver();
+      }
     }
   }
 };

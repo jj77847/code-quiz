@@ -1,3 +1,14 @@
+:root {
+  --mmain-yellow: yellow;
+  --main-red: red;
+  --alert-success-text: white;
+  --alert-success-background: green;
+  --alert-success-border: black;
+  --alert-danger-text: white;
+  --alert-danger-background: red;
+  --alert-danger-border: black;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -15,6 +26,11 @@ h1 {
   color: red;
 }
 
+h2 {
+  color: yellow;
+  font-size: 2rem;
+}
+
 p {
   font-size: x-large;
 }
@@ -25,6 +41,7 @@ p {
 
 .options {
   font-size: x-large;
+  text-align: center;
 }
 
 .header {
@@ -67,6 +84,15 @@ p {
   display: flex;
 }
 
+.main-container {
+  font-size: 1rem;
+  background-image: url(/assets/images/batman-background-quiz.jpeg);
+  background-repeat: round;
+  margin: 0;
+  display: block;
+  display: flex;
+}
+
 .container {
   margin: 0 2rem;
   padding: 4rem;  
@@ -74,11 +100,17 @@ p {
 
 .start-container {
   text-align: center;
+  background-image: url(/assets/images/batman-background-quiz.jpeg);
+  background-repeat: round;
+  margin: 0;
+  display: block;
+  display: flex;
 }
 
 .title {
   font-size: 3rem;
   font-weight: 400;
+  text-align: center;
 }
 
 .btn {
@@ -164,6 +196,7 @@ p {
 .form-container {
   display: flex;
   flex-direction: column;
+  background-color: red;
 }
 
 .form-item {
@@ -180,7 +213,7 @@ p {
   text-align: center;
   background-color: yellow;
   margin-top: 4rem;
-  color: red;
+  background-color: red;
   font-size: 4rem;
 }
 
