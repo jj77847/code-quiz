@@ -78,10 +78,8 @@ p {
 
 .main {
   font-size: 2rem;
-  background-image: url(https://www.google.com/https://3.bp.blogspot.com/-0pbQkquvka0/WjcRTRlIVTI/AAAAAAAADFs/zlw7hJ1gZ_cWlE8PgGvJ62jPM4TS1lNFQCK4BGAYYCw/s1600/DCYRrJ-VoAAF1jT.jpg);
+  background-image: url(/assets/images/batman-background-quiz.jpeg);
   margin: 0;
-  display: block;
-  display: flex;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -90,12 +88,10 @@ p {
   width: auto;
 }
 
-.main-container {
+main#main-container {
   font-size: 1rem;
-  background-image: url(https://www.google.com/https://3.bp.blogspot.com/-0pbQkquvka0/WjcRTRlIVTI/AAAAAAAADFs/zlw7hJ1gZ_cWlE8PgGvJ62jPM4TS1lNFQCK4BGAYYCw/s1600/DCYRrJ-VoAAF1jT.jpg);
+  background-image: url(/assets/images/batman-background-quiz.jpeg);
   margin: 0;
-  display: block;
-  display: flex;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -111,10 +107,8 @@ p {
 
 .start-container {
   text-align: center;
-  background-image: url(https://www.google.com/https://3.bp.blogspot.com/-0pbQkquvka0/WjcRTRlIVTI/AAAAAAAADFs/zlw7hJ1gZ_cWlE8PgGvJ62jPM4TS1lNFQCK4BGAYYCw/s1600/DCYRrJ-VoAAF1jT.jpg);
+  background-image: url(/assets/images/batman-background-quiz.jpeg);
   margin: 0;
-  display: block;
-  display: flex;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -201,7 +195,7 @@ p {
 
 .score-form {
   text-align: center;
-  background-color: var(--main-red);
+  background-color: none;
   color: var(--main-yellow);
   margin-top: 4rem;
 }
@@ -218,7 +212,7 @@ p {
 
 .form-item input {
   padding: 1rem 0.5rem;
-  font-size: 4rem;
+  font-size: 2rem;
   width: 100%;
 }
 

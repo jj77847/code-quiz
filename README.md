@@ -6,11 +6,19 @@ Batman 66 inspired quiz using JavaScript, HTML and CSS
 
 ### Links
 
-[Link to Google](https://www.google.com)
+[github](https://jj77847.github.io/code-quiz/)
 
+### Screenshots
 
+[Main Page](https://github.com/jj77847/code-quiz-final/blob/5f2ce1f3dddd52d1a18c698986dd5bff1ff2ced1/assets/images/main-title-page.png)
 
-#### Screenshots
+[Qiz pages x 10](https://github.com/jj77847/code-quiz-final/blob/5f2ce1f3dddd52d1a18c698986dd5bff1ff2ced1/assets/images/quiz-questions-layout.png)
+
+[Entering Initials highscore](https://github.com/jj77847/code-quiz-final/blob/dev/assets/images/entering-highscores.png)
+
+[Highscores page](https://github.com/jj77847/code-quiz-final/blob/dev/assets/images/highscores.png)
+
+#### User Stories
 
 There are 10 questions and a 100sec timer that will Start; once the 'START QUIZ' button is pressed.
 
@@ -21,7 +29,7 @@ Once you've finished; you can save your high-score.
 By adding your initials to the text box and pressing the
 'SUBMIT' button.
 
-Summary
+#### Summary
 
 HTML and CSS and Javascript documents create a quiz with multiple choice questions with Javascript trivia
 This project emphasizes the use of using Javascript to make dynamic changes to an HMTL document
@@ -29,23 +37,26 @@ This project utilizes the use of appending HTML pages
 
 This project has the following features:
 
-A Start Quiz button
-  This starts a timer for the user
-  Each question averages 10 seconds each for a total time of 100 seconds + 1.
-  
-An appended HTML page that features questions, and multiple choice answers
-  If questions are answered incorrectly, 5 seconds are deducted off remaining time
-  Answers are recording using an event listener, "click" and tracks correct answers
+**A Start Quiz button**
 
-An appended HTML page that features:
-  Final score which is calculated using time remaining
-  A Summary of how many questions answered correctly
-  Input area to record initials
-  A Submit button \* Submit buttom saves initials and score to local storage
+*This starts a timer for the user
+*Each question averages 10 seconds each question
+\*Total time of 100 seconds + 1.
+
+**An appended HTML page that features questions, and multiple choice answers**
+
+*If questions are answered incorrectly, 5 seconds are deducted off remaining time
+*Answers are recording using an event listener, "click" and tracks correct answers
+
+**An appended HTML page that features:**
+
+*Final score which is calculated using time remaining
+*A Summary of how many questions answered correctly
+*Input area to record initials
+*A Submit button \* Submit buttom saves initials and score to local storage
 
 A Highscores HTML
- This a list summary of intials and final scores
- Clear button resets the page and local storage \* Go back button travels to the start of the quiz
-  
 
-
+*This a list summary of intials and final scores
+*Clear button resets the page and local storage
+\*Go back button travels to the start of the quiz
