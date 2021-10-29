@@ -1,0 +1,241 @@
+:root {
+  --main-yellow: yellow;
+  --main-red: red;
+  --alert-success-text: white;
+  --alert-success-background: green;
+  --alert-success-border: black;
+  --alert-danger-text: white;
+  --alert-danger-background: red;
+  --alert-danger-border: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 2px;
+  font-family: "Bangers", cursive;
+  line-height: 1.4;
+  font-size: 10px;
+  color: yellow;
+  text-shadow: 2px 2px 4px black;
+}
+
+h1 {
+  color: red;
+  font-size: 2rem;
+}
+
+h2 {
+  color: yellow;
+  font-size: 2px;
+}
+
+p {
+  font-size: 2rem;
+}
+
+#title {
+  font-size: x-large;
+}
+
+.options {
+  font-size: x-large;
+  text-align: center;
+}
+
+.header {
+  color: yellow;
+  font-size: 2rem;
+  background-color: black;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-item {
+  padding: 2rem;
+  color: yellow;
+  background-color: red;
+}
+
+.nav-item a {
+  background-color: red;
+  cursor: pointer;
+  color: yellow;
+  font-size: 2rem;
+}
+
+.nav-item a:hover {
+  background-color: yellow;
+  cursor: pointer;
+  color: red;
+}
+
+.main {
+  font-size: 2rem;
+  background-image: url(/assets/images/batman-background-quiz.jpeg);
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 5px;
+  height: auto;
+  width: auto;
+}
+
+main#main-container {
+  font-size: 1rem;
+  background-image: url(/assets/images/batman-background-quiz.jpeg);
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 5px;
+  height: auto;
+  width: auto;
+}
+
+.container {
+  margin: 0 2rem;
+  padding: 4rem;
+}
+
+.start-container {
+  text-align: center;
+  background-image: url(/assets/images/batman-background-quiz.jpeg);
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 5px;
+  height: auto;
+  width: auto;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.btn {
+  padding: 1rem 1.5rem;
+  border-radius: 0.4rem;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  background-color: red;
+  border-style: solid;
+  color: yellow;
+}
+
+.btn:hover {
+  background-color: yellow;
+  cursor: pointer;
+  color: red;
+}
+
+.question-container {
+  text-align: center;
+}
+
+.question {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 2rem;
+}
+
+.option-item {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: red;
+  color: yellow;
+  border-color: black;
+  border-radius: 0.2rem;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+}
+
+.option-item:hover {
+  background-color: yellow;
+  cursor: pointer;
+  color: red;
+}
+
+.answer-alert {
+  position: relative;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid;
+  border-radius: 0.25rem;
+}
+
+.answer-alert-success {
+  color: var(--alert-success-text);
+  background-color: var(--alert-success-background);
+  border-color: var(--alert-success-border);
+}
+
+.answer-alert-danger {
+  color: var(--alert-danger-text);
+  background-color: var(--alert-danger-background);
+  border-color: var(--alert-danger-border);
+}
+
+.score-form {
+  text-align: center;
+  background-color: none;
+  color: var(--main-yellow);
+  margin-top: 4rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+}
+
+.form-item {
+  margin: 1rem 0;
+}
+
+.form-item input {
+  padding: 1rem 0.5rem;
+  font-size: 2rem;
+  width: 100%;
+}
+
+.game-over {
+  text-align: center;
+  background-color: yellow;
+  margin-top: 4rem;
+  background-color: red;
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 576px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    margin: 4rem 1rem;
+    padding: 2rem;
+  }
+
+  .form-item input {
+    width: 100%;
+  }
+}
